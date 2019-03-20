@@ -1,13 +1,11 @@
 from PIL import Image
 import numpy as np
-from utils import convert_to_brightness_contrast
 
 SQUARE_EDGE_SIZE = 4
 
 def run():
     image = Image.open('images/nature.bmp')
 
-    coef_array = convert_to_brightness_contrast(image)
     compressed_array = []
     height, width = image.size
 

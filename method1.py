@@ -7,5 +7,6 @@ def run():
 
     newImage = image.resize((160, 120))
     newImage.save('images/nature_resized.bmp')
+    return convert_to_brightness_contrast(newImage)
 
 run()
